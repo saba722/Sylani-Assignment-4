@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Site Metas -->
+   <title>DASC-EDU</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+   <!-- Modernizer for Portfolio -->
+   <script src="js/modernizer.js"></script>
+   <style>
+      .column0 {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+      }
+      /* Create two equal columns that floats next to each other */
+      .column1 {
+      float: left;
+      width: 50%;
+      height: 300px; /* Should be removed. Only for demonstration */
+      font-size: 40px;
+      }
+      .column1 h2{
+      font-size: 40px;
+      padding: 40px;
+      }
+      .column2 {
+      float: left;
+      width: 30%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+      }
+      .list li {
+      font-size: 16px;
+      }
+      @media screen and (max-width: 992px) {
+      .column1 h2{
+      font-size: 30px;
+      }
+      }
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+      .column0 {
+      display: none;
+      }
+      .column1, .column2 {
+      width: 50%;
+      padding: 0px;
+      }
+      .column1 h2{
+      font-size: 20px;
+      }
+      .column2 li{
+      font-size: 14px;
+      }
+      }
+   </style>
+   </head>
+   <body class="host_version">
+      <!-- Modal -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header tit-up">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Customer Login</h4>
+               </div>
+               <div class="modal-body customer-box">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                     <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                     <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="Login">
+                        <form role="form" class="form-horizontal">
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="email1" placeholder="Name" type="text">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-sm-10">
+                                 <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                 Submit
+                                 </button>
+                                 <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="tab-pane" id="Registration">
+                        <form role="form" class="form-horizontal">
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" placeholder="Name" type="text">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="email" placeholder="Email" type="email">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="password" placeholder="Password" type="password">
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-sm-10">
+                                 <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                 Save &amp; Continue
+                                 </button>
+                                 <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                 Cancel</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- LOADER -->
+      <div id="preloader">
+         <div class="loader-container">
+            <div class="progress-br float shadow">
+               <div class="progress__item"></div>
+            </div>
+         </div>
+      </div>
+      <!-- END LOADER --> 
+      <!-- Start header -->
+      <header class="top-navbar">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">
+               <img src="images/logo.png" alt=""  width="150px" />
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbars-host">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="course-grid-4.html" >Courses </a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://www.dasceurope.com/">For Business</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Sign in</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- End header -->
+      <div id="overviews" class="section wb" >
+         <div class="container" style="background-image:url('images/img-01.jpg'); height: 480px;">
+            <div class="section-title row text-center">
+               <div class="col-md-8 offset-md-2">
+                  <br>
+                  <h1 style="color: white">Course Details</h1>
+               </div>
+            </div>
+            <!-- end title -->
+            <div class="row" style="margin: 5px;">
+               <div class="column0" style="background-color:white;">
+                  <img style="padding-top: 30px;" src="images/course_1.jpg" width="200px" height="230px">
+               </div>
+               <div class="column1" style="background-color:white;">
+                  <h2 style=" ">Leading Change II – Best Practice from the first steps to the next change</h2>
+               </div>
+               <div class="column2" style="background-color:#e8e7e3;">
+                  <div style="border: none;" class="course-meta-bot">
+                     <ul class="list" style="text-align: left;">
+                        <li ><i class="fa fa-clock-o fa-lg" aria-hidden="true"> </i>&nbsp;&nbsp;&nbsp;Batch Duration:&nbsp;&nbsp;&nbsp;  1 Month</li>
+                        <br>
+                        <li><i class="fa fa-calendar fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Start Date:&nbsp;&nbsp;&nbsp; 23 May 2020</li>
+                        <br>
+                        <li><i class="fa fa-tag fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Fee:&nbsp;&nbsp;&nbsp; $200</li>
+                        <br>
+                        <li><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Enrolled Trainees:&nbsp;&nbsp;&nbsp; 56 Student</li>
+                        <br>
+                        <li><i class="fa fa-file-video-o fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Video Medium:&nbsp;&nbsp;&nbsp; English</li>
+                        <br>
+                        <div class="pricing-table-sign-up">
+                           <ul style="float: left;" class="nav navbar-nav navbar-right">
+                              <li>
+                                 <a href="#" class="hover-btn-new log orange">
+                                 <span style="font-size: 13px;">Enroll Now
+                                 </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" >
+         <hr class="invis">
+         <div class="row align-items-center">
+            <div  class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+               <div class="message-box">
+                  <h4>DASC-EDU ONLINE COURSE</h4>
+                  <h2>What do you learn in this course?</h2>
+                  <p style="text-align: justify;">Do you want to lead through phases of change in teams, bureaus or organizations effectively? In this course you will discover the benefit of regular and clear communication as the key to success and you will learn to use the 8 phases of change by John Kotter.For further understanding of the topic of 'Change' we offer the courses Leading Change I and Leading Change III. In Leading Change I you get to know the emotional curve of change processes, how to establish stability in unstable phases and use clear structures to shape the change actively and in a positive way. The third Leading Change course allows you to discover the many layers of change, learn to communicate with specific target groups on specific occasions and begin to use your role as a change agent. The courses are offered independently and do not build on each other. You are therefore free to choose from the topics which spark the biggest interest.</p>
+               </div>
+               <!-- end messagebox -->
+            </div>
+            <!-- end col -->
+            <div  class="col-lg-3 col-md-6 col-12">
+               <center>
+                  <h2>Instructor</h2>
+               </center>
+               <div class="post-media wow fadeIn">
+                  <div class="our-team">
+                     <div class="team-img">
+                        <img src="images/team-01.png">
+                     </div>
+                  </div>
+               </div>
+               <!-- end media -->
+            </div>
+            <!-- end col -->
+            <div class="col-lg-3 col-md-6 col-12">
+               <div class="post-media wow fadeIn">
+                  <div class="our-team">
+                     <div class="team-img">
+                        <strong>
+                           <h2>Zachi Davis</h2>
+                        </strong>
+                        <hr>
+                        <p>After studying Business Administration in Cologne and being a Human Resources Consultant with KPMG Consulting, Zach founded the training institute peoplebuilding in January 2003. Since 2007 Zach Davis is listed in the directory “who is who in Germany,” which portrays public personalities who have shown outstanding personal and professional achievement. </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- end media -->
+            </div>
+            <!-- end col -->
+         </div>
+      </div>
+      <!-- end container -->
+      </div><!-- end section -->
+      <footer class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>About US</h3>
+                     </div>
+                     <p> Online learning offers a new way to explore subjects you’re passionate about. Pursue your interests by exploring our subject categories. 87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career</p>
+                     <div class="footer-right">
+                        <ul class="footer-links-soi">
+                           <li><a href="https://www.facebook.com/DASAviationService/"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://chat.whatsapp.com/invite/7R2xs4j7KieDWm3yampbVH"><i class="fa fa-whatsapp"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                        <!-- end links -->
+                     </div>
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Information Link</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Contact Details</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="mailto:#">info@dasceurope.com</a></li>
+                        <li><a href="#">www.yoursite.com</a></li>
+                        <li>71-75 Shelton Street Covent Garden, London, UNITED KINGDOM, WC2H 9JQ</li>
+                        <li>P: +4402038661189 UK</li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </footer>
+      <!-- end footer -->
+      <div class="copyrights">
+         <div class="container">
+            <div class="footer-distributed">
+               <div class="footer-center">
+                  <p class="footer-company-name">All Rights Reserved. &copy; 2002 <a href="#">DASC-EDU</a></p>
+               </div>
+            </div>
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end copyrights -->
+      <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- ALL JS FILES -->
+      <script src="js/all.js"></script>
+      <!-- ALL PLUGINS -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>

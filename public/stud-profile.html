@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Site Metas -->
+   <title>DASC-EDU</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Modernizer for Portfolio -->
+   <script src="js/modernizer.js"></script>
+   <style>
+      .row1 {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 -16px;
+      }
+      .col-25 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      }
+      .col-50 {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+      }
+      .col-75 {
+      -ms-flex: 75%; /* IE10 */
+      flex: 75%;
+      }
+      .col-25,
+      .col-50,
+      .col-75 {
+      padding: 0 16px;
+      }
+      .container1 {
+      padding: 5px 20px 15px 20px;
+      border-radius: 3px;
+      }
+      input[type=text],input[type=password],input[type=date] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      label {
+      margin-bottom: 10px;
+      display: block;
+      text-align: left;
+      }
+      .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+      }
+      .btn {
+      background-color: #4CAF50;
+      color: white;
+      width: 180px;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+      }
+      .btn:hover {
+      background-color: #45a049;
+      }
+      a {
+      color: #2196F3;
+      }
+      span.price {
+      float: right;
+      color: grey;
+      }
+      .col-50 h3{
+      font-size: 20px;
+      text-align: left;
+      }
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+      .col-25 {
+      margin-bottom: 20px;
+      }
+      }
+      .avatar {
+      vertical-align: middle;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      }
+   </style>
+   </head>
+   <body class="host_version">
+      <!-- LOADER -->
+      <div id="preloader">
+         <div class="loader-container">
+            <div class="progress-br float shadow">
+               <div class="progress__item"></div>
+            </div>
+         </div>
+      </div>
+      <!-- END LOADER --> 
+      <!-- Start header -->
+      <header class="top-navbar" >
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">
+               <img src="images/logo.png" alt=""  width="150px" />
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbars-host" >
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item "><a class="nav-link" href="stud-browse-courses.html" >Courses </a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://www.dasceurope.com/">For Business</a></li>
+                     <li class="nav-item dropdown" style=" padding-right: 50px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
+                        <img src="images/author.jpg" width="40px" style="border-radius: 50%;">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                           <a class="dropdown-item" href="stud-courses.html">My Courses</a>
+                           <a class="dropdown-item" href="#">Account Settings</a>
+                           <a class="dropdown-item" href="my-profile.html">My Profile </a>
+                           <a class="dropdown-item" href="#">My Activities </a>
+                           <a class="dropdown-item" href="#">Referrals</a>
+                           <a class="dropdown-item" href="#">Logout </a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- End header -->
+      <div id="overviews" class="section lb">
+         <div class="container">
+            <div class="section-title row text-center">
+               <div >
+                  <h3>Account Settings</h3>
+                  <hr>
+                  <br>
+                  <div class="row1">
+                     <div class="col-25">
+                        <div class="container1">
+                           <img src="images/author.jpg" alt="Avatar" class="avatar">
+                        </div>
+                     </div>
+                     <div class="col-75">
+                        <div class="container1">
+                           <form action="#">
+                              <div class="row1">
+                                 <div class="col-50">
+                                    <h3>General</h3>
+                                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                                    <label for="country"><i class="fa fa-institution"></i> Country</label>
+                                    <input type="text" id="country" name="country" placeholder="New York">
+                                    <label for="birthday"><i class="fa fa-address-card-o"></i> Birthday (for certificate)</label>
+                                    <input type="date" id="birthday" name="birthday" >
+                                 </div>
+                                 <div class="col-50">
+                                    <h3>Password</h3>
+                                    <label for="cpassword">Current Password</label>
+                                    <input type="password" id="cpassword" name="cpassword" >
+                                    <label for="npassword">New Password</label>
+                                    <input type="password" id="npassword" name="npassword" >
+                                    <label for="confirmpassword">Confirm Password</label>
+                                    <input type="password" id="confirmpassword" name="confirmpassword">
+                                    <label for="job"></i> Job title / occupation (for certificate)</label>
+                                    <input type="text" id="job" name="job" placeholder="Web Developer">
+                                 </div>
+                              </div>
+                              <input type="submit" value="Save" class="btn">
+                              <input type="button" value="Delete Account" class="btn">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end title -->
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end section -->
+      <footer class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>About US</h3>
+                     </div>
+                     <p> Online learning offers a new way to explore subjects you’re passionate about. Pursue your interests by exploring our subject categories. 87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career</p>
+                     <div class="footer-right">
+                        <ul class="footer-links-soi">
+                           <li><a href="https://www.facebook.com/DASAviationService/"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://chat.whatsapp.com/invite/7R2xs4j7KieDWm3yampbVH"><i class="fa fa-whatsapp"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                        <!-- end links -->
+                     </div>
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Information Link</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Contact Details</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="mailto:#">info@dasceurope.com</a></li>
+                        <li><a href="#">www.yoursite.com</a></li>
+                        <li>71-75 Shelton Street Covent Garden, London, UNITED KINGDOM, WC2H 9JQ</li>
+                        <li>P: +4402038661189 UK</li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </footer>
+      <!-- end footer -->
+      <div class="copyrights">
+         <div class="container">
+            <div class="footer-distributed">
+               <div class="footer-center">
+                  <p class="footer-company-name">All Rights Reserved. &copy; 2002 <a href="#">DASC-EDU</a></p>
+               </div>
+            </div>
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end copyrights -->
+      <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- ALL JS FILES -->
+      <script src="js/all.js"></script>
+      <!-- ALL PLUGINS -->
+      <script src="js/custom.js"></script>
+      <script src="js/timeline.min.js"></script>
+      <script>
+         timeline(document.querySelectorAll('.timeline'), {
+          forceVerticalMode: 700,
+          mode: 'horizontal',
+          verticalStartPosition: 'left',
+          visibleItems: 4
+         });
+      </script>
+   </body>
+</html>

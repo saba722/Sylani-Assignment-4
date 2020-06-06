@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Site Metas -->
+   <title>DASC-EDU</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+   <!-- Modernizer for Portfolio -->
+   <script src="js/modernizer.js"></script>
+   <style>
+      .col1{
+      float: left;
+      width: 65%;
+      padding: 20px;
+      border: solid #e8e7e3; 
+      margin: 10px;
+      text-align: left;
+      }
+      .col1 table{
+      width: 50%;
+      }
+      .col2 h1{
+      text-align: center;
+      color: #34b4c8;
+      font-size: 50px;
+      }
+      .col2{
+      float: left;
+      width: 30%;
+      text-align: center;
+      padding: 20px;
+      border: solid #e8e7e3;
+      margin: 10px; 
+      }
+      @media screen and (max-width: 800px) {
+      .col1{
+      width: 100%;
+      }
+      .col2{
+      width: 100%;
+      }
+      .col1 table{
+      width: 100%;
+      }
+      }
+      .topnav {
+      background-color:#e8e7e3;
+      width: 100%;
+      }
+      .topnav a {
+      float: left;
+      display: block;
+      color: #656561;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+      .topnav a.active {
+      background-color: #34b4c8;
+      color: white;
+      }
+      .topnav .icon {
+      display: none;
+      }
+      .topnav-right {
+      float: right;
+      }
+      .topnav-right:hover {
+      float: right;
+      }
+      .dropbtn {
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      }
+      .dropdown {
+      position: relative;
+      display: inline-block;
+      }
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      width: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 0;
+      }
+      .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      }
+      .dropdown-content a:hover {background-color: #ddd;}
+      .dropdown:hover .dropdown-content {display: block;}
+      @media screen and (max-width: 600px) {
+      .topnav a {display: none;}
+      .topnav a.icon {
+      float: left;
+      display: block;
+      }
+      }
+      @media screen and (max-width: 600px) {
+      .topnav{
+      margin: 30px;
+      }
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+      .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      }
+      }
+      .avatar {
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      }
+   </style>
+   </head>
+   <body class="host_version">
+      <!-- LOADER -->
+      <div id="preloader">
+         <div class="loader-container">
+            <div class="progress-br float shadow">
+               <div class="progress__item"></div>
+            </div>
+         </div>
+      </div>
+      <!-- END LOADER --> 
+      <!-- Start header -->
+      <header class="top-navbar" >
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">
+               <img src="images/logo.png" alt=""  width="150px" />
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbars-host" >
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item "><a class="nav-link" href="stud-browse-courses.html" >Courses </a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://www.dasceurope.com/">For Business</a></li>
+                     <li class="nav-item dropdown" style=" padding-right: 50px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
+                        <img src="images/author.jpg" width="40px" style="border-radius: 50%;">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                           <a class="dropdown-item" href="stud-courses.html">My Courses</a>
+                           <a class="dropdown-item" href="stud-profile.html">Account Settings</a>
+                           <a class="dropdown-item" href="#">My Profile </a>
+                           <a class="dropdown-item" href="#">My Activities </a>
+                           <a class="dropdown-item" href="#">Referrals</a>
+                           <a class="dropdown-item" href="#">Logout </a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- End header -->
+      <div id="overviews" class="section lb">
+         <div class="container">
+            <div class="section-title row text-center">
+               <div >
+                  <h3>business Informatics</h3>
+                  <div class="row" >
+                     <div class="topnav" id="myTopnav">
+                        <a href="#dashboard" class="active">Dashboard</a>
+                        <a href="chapters.html">Chapters</a>
+                        <a href="Announcements.html">Announcements</a>
+                        <a href="Journal.html">Journal</a>
+                        <div class="topnav-right">
+                           <div class="dropdown">
+                              <button class="dropbtn"><i class="fa fa-share-alt" style=" font-size:24px;"></i></button>
+                              <div class="dropdown-content">
+                                 <a href="#">facebook</a>
+                              </div>
+                           </div>
+                           <div class="dropdown">
+                              <button class="dropbtn"><i class="fa fa-cog" style="font-size:24px"></i></button>
+                              <div class="dropdown-content">
+                                 <a href="#">UnEnroll</a>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                     </div>
+                  </div>
+                  <!-- end row -->  
+                  <div id="overviews" class="section lb">
+                     <div class="container">
+                        <div class="section-title row text-center">
+                           <div >
+                              <div class="row" >
+                                 <div class="col1" >
+                                    <h1>Your Progress</h1>
+                                    <div style="height: 20%; border-radius: 10px; "  class="progress">
+                                       <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%; background-color: #34b4c8">
+                                          50% 
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col2">
+                                    <h1 >4546</h1>
+                                    <p>people are enrolled in this course</p>
+                                 </div>
+                                 <div class="col1" >
+                                    <h1>Recent Activity</h1>
+                                    <table style="text-align: left; "   >
+                                       <tr >
+                                          <td rowspan="2"> <img src="images/author.jpg" alt="Avatar" class="avatar"></td>
+                                          <td style="color: #34b4c8 ">Ruediger Zarnekow</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <p style="font-size: 14px;"> has joined the course</p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td rowspan="2"> <img src="images/author.jpg" alt="Avatar" class="avatar"></td>
+                                          <td style="color: #34b4c8 ">Ruediger Zarnekow</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <p style="font-size: 14px;"> has joined the course</p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td rowspan="2"> <img src="images/author.jpg" alt="Avatar" class="avatar"></td>
+                                          <td style="color: #34b4c8 ">Ruediger Zarnekow</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <p style="font-size: 14px;"> has joined the course</p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td rowspan="2"> <img src="images/author.jpg" alt="Avatar" class="avatar"></td>
+                                          <td style="color: #34b4c8 ">Ruediger Zarnekow</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <p style="font-size: 14px;"> has joined the course</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </div>
+                                 <div class="col2">
+                                    <h1 style="text-align: left; color: black; font-size: 20px; " >Instructor</h1>
+                                    <br>
+                                    <table style="text-align: left;" >
+                                       <tr >
+                                          <td rowspan="2"> <img src="images/author.jpg" alt="Avatar" class="avatar"></td>
+                                          <td >Ruediger Zarnekow</td>
+                                       </tr>
+                                       <tr>
+                                          <td style="color: #34b4c8 ">View Profile</td>
+                                       </tr>
+                                    </table>
+                                 </div>
+                              </div>
+                              <!-- end row --> 
+                           </div>
+                        </div>
+                        <!-- end title -->
+                     </div>
+                     <!-- end container -->
+                  </div>
+                  <!-- end section -->
+               </div>
+            </div>
+            <!-- end title -->
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end section -->
+      <footer class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>About US</h3>
+                     </div>
+                     <p> Online learning offers a new way to explore subjects you’re passionate about. Pursue your interests by exploring our subject categories. 87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career</p>
+                     <div class="footer-right">
+                        <ul class="footer-links-soi">
+                           <li><a href="https://www.facebook.com/DASAviationService/"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://chat.whatsapp.com/invite/7R2xs4j7KieDWm3yampbVH"><i class="fa fa-whatsapp"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                        <!-- end links -->
+                     </div>
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Information Link</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Contact Details</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="mailto:#">info@dasceurope.com</a></li>
+                        <li><a href="#">www.yoursite.com</a></li>
+                        <li>71-75 Shelton Street Covent Garden, London, UNITED KINGDOM, WC2H 9JQ</li>
+                        <li>P: +4402038661189 UK</li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </footer>
+      <!-- end footer -->
+      <div class="copyrights">
+         <div class="container">
+            <div class="footer-distributed">
+               <div class="footer-center">
+                  <p class="footer-company-name">All Rights Reserved. &copy; 2002 <a href="#">DASC-EDU</a></p>
+               </div>
+            </div>
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end copyrights -->
+      <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- ALL JS FILES -->
+      <script src="js/all.js"></script>
+      <!-- ALL PLUGINS -->
+      <script src="js/custom.js"></script>
+      <script src="js/timeline.min.js"></script>
+      <script>
+         timeline(document.querySelectorAll('.timeline'), {
+          forceVerticalMode: 700,
+          mode: 'horizontal',
+          verticalStartPosition: 'left',
+          visibleItems: 4
+         });
+               function myFunction() {
+         var x = document.getElementById("myTopnav");
+         if (x.className === "topnav") {
+           x.className += " responsive";
+         } else {
+           x.className = "topnav";
+         }
+         }
+      </script>
+   </body>
+</html>

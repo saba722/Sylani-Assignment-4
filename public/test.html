@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+    <style>
+        .col1{
+            float: left;
+            width: 65%;
+            padding: 20px;
+            border: solid #e8e7e3; 
+            margin: 10px;
+            text-align: left;
+            
+
+        }
+        .col1 table{
+            width: 50%;
+        }
+        .col2 h1{
+            text-align: center;
+            color: #34b4c8;
+            font-size: 50px;
+        }
+        .col2{
+            float: left;
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            border: solid #e8e7e3;
+            margin: 10px; 
+        }
+        
+@media screen and (max-width: 800px) {
+ 
+  .col1{
+   width: 100%;
+ 
+  }
+  .col2{
+    
+    width: 100%;
+  }
+   .col1 table{
+            width: 100%;
+        }
+ 
+ 
+}
+
+
+.topnav {
+  
+  background-color:#e8e7e3;
+  width: 100%;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #656561;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #34b4c8;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav-right {
+  float: right;
+}
+.topnav-right:hover {
+  float: right;
+}
+.dropbtn {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: #e8e7e3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+    .topnav{
+        margin: 30px;
+    }
+
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  
+}
+
+.btn-drop-down{
+ 
+  display: block;
+  text-align: left;
+  background-color:#e8e7e3;
+  padding: 30px;
+  color: #656561;
+  border: none;
+  font-size: 18px;
+  margin: 3px;
+   display: block;
+  width: 100%;
+  cursor: pointer;
+  border-left: 9px solid #a1a19f;
+
+}
+#width{
+  width: 50%
+}
+.dropdown-item{
+
+  width: 95%;
+  background-color:#e8e7e3;
+  padding: 10px;
+  color: #656561;
+  margin: 3px;
+  border-left: 9px solid #a1a19f;
+
+
+
+}
+.dropdown-item:hover{
+
+
+  background-color:#e8e7e4;
+  
+
+}
+.dropdown-menu{
+width: 95%;  border: none;
+}
+#myDIV2{
+  display: none;
+}
+
+.toggle{
+  width: 100%;
+  
+
+}
+.toggle button{
+  float: right;
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+#myDIV1{
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+#myDIV2{
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+        #next{
+            display:none;
+        }
+        #sub{
+            display: none;
+        }
+        .front{
+            margin:2%;
+            outline:5px solid #0c0c0b;;
+            padding:5%;
+            height:335px;
+            padding-top:40%;
+            text-align: center;
+            background-color: white;
+            color:#71d1f4;
+            font-family: 'Yeseva One', cursive;
+
+        }
+        .answers{
+            margin:2%;
+            margin-top:5%;
+            padding:5%;
+            align-self: center;
+            background-color: white;
+            display:none;
+            color:#71d1f4;
+            border:5px solid white;
+            font-family: 'Rokkitt', serif;
+            font-size:20px;
+        }
+        .qa{
+            color:#71d1f4;
+        }
+        .quiz{
+            margin:5%;
+            margin-top:5%;
+            padding:5%;
+            align-self: center;
+            background-color: #0c0c0b;
+            display:none;
+            color:white;
+            border:5px solid white;
+            font-family: 'Rokkitt', serif;
+
+        }
+        .result{
+            margin:2%;
+            padding:5%;
+            padding-top:40%;
+            height:330px;
+            text-align: center;
+            background-color: white;
+            display: none;
+            font-family: 'Rokkitt', serif;
+
+        }
+        input[type="radio"] {
+          border: 0;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+          border-color: white;
+
+        }
+        .radio{
+             
+             
+             padding-bottom:4%;
+             
+        }
+        .radio label:before {
+          content: "";
+          display: inline-block;
+          width: 25px;
+          height:25px;
+          margin-right: 0.5em;
+          vertical-align: -3px;
+          border: 2px solid #666666;
+          padding: 0.13em;
+          background-color: white;
+          background-clip: content-box;
+
+        }
+        .radio label {
+          margin-right: 1em;
+        }
+        .radio input:hover + label:before {
+          border-color: white;
+        }
+        .radio input:checked + label:before {
+          background-color: #34b4c8;
+          border-color: white;
+        }
+        .arrow{
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 24px solid white;
+            position: relative;
+            left:30px;
+
+        }
+        #q{
+            background-color: white;
+            padding-top:10px;
+            padding-left:10px; 
+            padding-bottom:10px;
+            font-size:22px;
+            font-weight: bold;
+            border-radius:5px;
+            color: black;
+            
+        }
+        #op1,#op2,#op3,#op4{
+            background-color: #656561;
+            margin-bottom:2.5%;
+            padding:5px;
+            padding-left: 4%;
+            border-radius:5px;
+            font-size:22px;
+        }
+        #op1:hover,#op2:hover,#op3:hover,#op4:hover{
+            background-color:#34b4c8;
+        }
+        #num{
+            background-color:white;
+            font-size:20px;
+            border-radius:30px;
+            padding-left:2%;
+            color:black;
+            width:60px;
+
+        }
+        #sub{
+            background-color:#40c2f2;
+            padding: 8px;
+            border-radius:5px;
+            border:none;
+            width:200px;
+            font-size:20px;
+            color: white;
+            float: right;
+           border-radius: 80px;
+           cursor: pointer;
+        }
+          #sub:hover{
+            background-color:#119ed9;
+            
+        }
+        #start{
+            
+             float: right;
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+
+        }
+        .score{
+            font-size:21px;
+            font-weight: bolder;
+            color: #40c2f2;
+        }
+        .message{
+            font-size: 20px;
+            color: #40c2f2;
+        }
+        .answers{
+            display: none;
+        }
+        #a1,#a2,#a3,#a3,#a4,#a5,#a6,#a7,#a8,#a9,#a10{
+            color:#80ff00;
+            font-weight: bold;
+        }
+        #chaps{
+          width: 16%; 
+          border-top : 7px solid grey; 
+          margin-right: 2px;
+        }
+
+</style>
+    
+
+</head>
+<body class="host_version"> 
+   
+    
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER --> 
+    
+    <!-- Start header -->
+    <header class="top-navbar" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt=""  width="150px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host" >
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="stud-browse-courses.html" >Courses </a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://www.dasceurope.com/">For Business</a></li>
+                
+                    
+                    <li class="nav-item dropdown" style=" padding-right: 50px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
+                                <img src="images/author.jpg" width="40px" style="border-radius: 50%;">
+
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="stud-courses.html">My Courses</a>
+                                <a class="dropdown-item" href="stud-profile.html">Account Settings</a>
+                                <a class="dropdown-item" href="#">My Profile </a>
+                                <a class="dropdown-item" href="#">My Activities </a>
+                                <a class="dropdown-item" href="#">Referrals</a>
+                                <a class="dropdown-item" href="#">Logout </a>
+                            </div>
+                    </li>
+                        
+                 </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    
+
+    
+   
+
+    <div id="overviews" class="section lb">
+        <div class="container" >
+            <div class="section-title row text-center" >
+                <div >
+                    <h3>business Informatics</h3>
+                    
+                     <div class="row" >
+                        <div class="topnav" id="myTopnav">
+  <a href="dashboard.html" >Dashboard</a>
+  <a href="#" class="active">Chapters</a>
+  <a href="Announcements.html">Announcements</a>
+  <a href="Journal.html">Journal</a>
+
+  <div class="topnav-right">
+
+   
+    
+   
+    <div class="dropdown">
+  <button class="dropbtn"><i class="fa fa-share-alt" style=" font-size:24px;"></i></button>
+  <div class="dropdown-content">
+    <a href="#">facebook</a>
+  </div>
+
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><i class="fa fa-cog" style="font-size:24px"></i></button>
+  <div class="dropdown-content">
+    <a href="#">UnEnroll</a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+
+
+
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+</div>
+</div><!-- end row -->  
+
+<br>
+<div class="row" >
+                        <div class="topnav" id="myTopnav" style="background-color: white;">
+                          <div >
+      <div class="dropdown" id="chaps" >
+  <button class="dropbtn">1</button>
+  <div class="dropdown-content">
+    <a href="#">facebook</a>
+  </div>
+
+</div>
+<div class="dropdown" id="chaps" >
+  <button class="dropbtn">2</button>
+  <div class="dropdown-content">
+    <a href="#">UnEnroll</a>
+  </div>
+  
+</div>
+
+<div class="dropdown" id="chaps">
+  <button class="dropbtn">3</button>
+  <div class="dropdown-content">
+    <a href="#">facebook</a>
+  </div>
+
+</div>
+<div class="dropdown" id="chaps">
+  <button class="dropbtn">4</button>
+  <div class="dropdown-content">
+    <a href="#">UnEnroll</a>
+  </div>
+  
+</div>
+<div class="dropdown" id="chaps">
+  <button class="dropbtn">5</button>
+  <div class="dropdown-content">
+    <a href="#">facebook</a>
+  </div>
+
+</div>
+<div class="dropdown" id="chaps">
+  <button class="dropbtn">6</button>
+  <div class="dropdown-content">
+    <a href="#">UnEnroll</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+</div>
+</div><!-- end row -->  
+
+<div class="toggle" >
+
+  <div style="float: left;">
+    <br>  <br>
+    <h1>Topic Name</h1>
+  </div> <br> <br>
+  <button id="start"  onclick="myFunctiontoggle2()">Quiz</button>
+    <button id="b1" onclick="myFunctiontoggle1()">Main Content</button>
+    
+
+
+  </div> 
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+                </div>
+<div  >
+                <div id="myDIV1">
+  <video width="100%" height="440" controls>
+  <source src="video/video1.webm" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</div>
+                <div id="myDIV2">
+   <div class="front">
+        <h1>HTML and CSS Quiz</h1>
+        <button type="button" >Start</button>    
+    </div>
+    <div class="quiz">
+        <p id="num"></p>
+        <div id="q"></div><div class="arrow"></div><br>
+        <div class="radio">
+            <div id="op1"></div>
+            <div id="op2"></div>
+            <div id="op3"></div>
+            <div id="op4"></div>
+        </div><br>
+        <center><button type="button" id="sub">Submit</button></center><br>
+    </div>
+    <div class="result" >
+        <div class="score"></div>
+        <br>
+        <div class="message"></div>
+        <button type="button" id="an">Click here to see answers</button>
+    </div>
+    <div class="answers">
+        <p class="qa">1.Which tag is used to create clickable link?</p>
+        <p >Ans:<span id="a1">&lt;a&gt;</span></p>
+        <p class="qa">2.Which tag is used to specify a list of prefined options for input controls?</p>
+        <p >Ans:<span id="a2">&lt;datalist&gt;</p>
+        <p class="qa">3. Which HTML element is used to display a scalar measurement within a range?</p>
+        <p >Ans:<span id="a3">&lt;meter&gt;</span></p>
+        <p class="qa">4.Choose the correct HTML element to define important text?</p>
+        <p >Ans:<span id="a4">&lt;strong&gt;</span></p>
+        <p class="qa">5.______ element in HTML5 is used to indicate that text has been added to the document.?</p>
+        <p>Ans:<span id="a5">&lt;ins&gt;</span></p>
+        <p class="qa">6.______ attribute used in &lt;table&gt; element sets the width, in pixels, between the edge of a cell and its content</p>
+        <p>Ans:<span id="a6">cellpadding</span></p>
+        <p class="qa">7.Which attribute specifies the stack order of an element?</p>
+        <p >Ans:<span id="a7">z-index</span></p>
+        <p class="qa">8.Which property controls scrolling of an image in background? </p>
+        <p >Ans:<span id="a8">background-attachment.</span></p>
+        <p class="qa">9.What is default value of position property?</p>
+        <p >Ans:<span id="a9">static</span></p>
+
+        <p class="qa">10.Which CSS has highest priority?</p>
+        <p>Ans:<span id="a10">inline</p>
+    </div>
+</div>
+</div>
+            </div><!-- end title -->
+        
+            
+        </div><!-- end container -->
+
+    </div><!-- end section -->
+
+   
+
+   <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Online learning offers a new way to explore subjects you’re passionate about. Pursue your interests by exploring our subject categories. 87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career</p>   
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="https://www.facebook.com/DASAviationService/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://chat.whatsapp.com/invite/7R2xs4j7KieDWm3yampbVH"><i class="fa fa-whatsapp"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul><!-- end links -->
+                        </div>                      
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+                
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@dasceurope.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li>
+                            <li>71-75 Shelton Street Covent Garden, London, UNITED KINGDOM, WC2H 9JQ</li>
+                            <li>P: +4402038661189 UK</li>
+                           
+
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+                
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2002 <a href="#">DASC-EDU</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function myFunctiontoggle1() {
+  var x = document.getElementById("myDIV1");
+  var y = document.getElementById("myDIV2");
+    x.style.display = "block";
+
+    y.style.display = "none";
+
+ 
+}
+function myFunctiontoggle2() {
+  var x = document.getElementById("myDIV1");
+  var y = document.getElementById("myDIV2");
+  
+    y.style.display = "block";
+    x.style.display = "none";
+   
+  
+}
+ $(document).ready(function(){
+        var que;
+        var ans;
+        var right;
+        var i=0;
+        var score=0;
+        var que1={que:"Which tag is used to create clickable link?",
+            ans:["&lt;hyperlink&gt;","&lt;a&gt;","&lt;link&gt;","&lt;source&gt;"],
+            right:"1"};
+        var que2={que:"Which tag is used to specify a list of prefined options for input controls?",
+            ans:["&lt;embed&gt;","&lt;source&gt;","&lt;li&gt;","&lt;datalist&gt;"],
+            right:"3"};
+        var que3={que:" Which HTML element is used to display a scalar measurement within a range?",
+            ans:["&lt;meter&gt;","&lt;range&gt;","&lt;scalar&gt;","&lt;progress&gt;"],    right:"0"};
+        var que4={que:"Choose the correct HTML element to define important text?",
+            ans:["&lt;important&gt;","&lt;strong&gt;","&lt;imp&gt;","&lt;b&gt;"],
+            right:"1"};
+        var que5={que:"______ element in HTML5 is used to indicate that text has been added to the document.?",
+            ans:["&lt;fill&gt;","&lt;insert&gt;","&lt;add&gt;","&lt;ins&gt;"],
+            right:"3"};
+        var que6={que:"______ attribute used in <table> element sets the width, in pixels, between the edge of a cell and its content",
+            ans:["cellpadding"," cellspacing","colspacing","edgespacing"],
+            right:"0"};
+        var que7={que:"Which attribute specifies the stack order of an element?",ans:["x-index","y-index","z-index","xy-index"],right:"2"};
+        var que8={que:"Which property controls scrolling of an image in background? ",ans:["background-fixed","background-scroll","background-scrolling","background-attachment"],right:"3"};
+        var que9={que:"What is default value of position property?",ans:["static","fixed","relative","absolute"],right:"0"};
+        var que10={que:"Which CSS has highest priority?",ans:["inline","internal","external","Each have equal priority"],right:"0"};
+        var quelst=[que1,que2,que3,que4,que5,que6,que7,que8,que9,que10];
+        var wrong=[];
+        $("#start").click(function(){
+            $(".front").hide();
+            $("#sub").show();
+            $(".quiz").show();
+            $("#num").text(i+1+"/"+quelst.length)
+            $("#q").text(quelst[i].que);
+            $("#op1").html("<input type='radio' name='opt' id='o1' value='0'><label for='o1'>"+quelst[i].ans[0])+"</label>";
+            $("#op2").html("<input type='radio' name='opt' id='o2' value='1'><label for='o2'>"+quelst[i].ans[1])+"</label>";
+            $("#op3").html("<input type='radio' name='opt' id='o3' value='2'><label for='o3'>"+quelst[i].ans[2])+"</label>";
+            $("#op4").html("<input type='radio' name='opt' id='o4' value='3'><label for='o4'>"+quelst[i].ans[3])+"</label>";
+            
+        });
+        $("#sub").click(function(){
+            
+            
+            if($("input[name='opt']:checked").val()!=null){
+                if($("input[name='opt']:checked").val()==quelst[i].right){
+                    score++;
+                }
+                else{
+                    wrong.push(i);
+                }   
+                $("#sub").hide();
+                $(".score").text(score);
+                if(i!=quelst.length-1){
+                next();
+                }
+                else{
+                    reslt();
+                }
+
+            }
+            else{
+                $(".p").text("Select One option");
+            }
+        });
+        function next(){
+            if(i!=(quelst.length)-1){
+                    i++;
+                }
+            $("#q").text(quelst[i].que);
+            $("#op1").html("<input type='radio' name='opt' id='o1' value='0'><label for='o1'>"+quelst[i].ans[0])+"</label>";
+            $("#op2").html("<input type='radio' name='opt' id='o2' value='1'><label for='o2'>"+quelst[i].ans[1])+"</label>";
+            $("#op3").html("<input type='radio' name='opt' id='o3' value='2'><label for='o3'>"+quelst[i].ans[2])+"</label>";
+            $("#op4").html("<input type='radio' name='opt' id='o4' value='3'><label for='o4'>"+quelst[i].ans[3])+"</label>";
+            $("#num").text(i+1+"/"+quelst.length);
+            $("#sub").show();
+            }
+        function reslt(){
+            $(".quiz").hide();
+            $(".result").show();
+            $(".score").text(score+"/"+quelst.length);
+            if(score<=4){
+                $(".message").text("Oh no!!You need to do better.");
+            }
+            else if(score<8){
+                $(".message").text("Good.Dont stop studying.");
+            }
+            else{
+                $(".message").text("Great!!You have really good knowledge of HTML and CSS.");
+            }
+        }
+        $("#an").click(function(){
+            $(".result").hide();
+            $(".answers").show();
+            if((wrong.toString()).search("0")!=-1){
+                $("#a1").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("1")!=-1){
+                $("#a2").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("2")!=-1){
+                $("#a3").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("3")!=-1){
+                $("#a4").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("4")!=-1){
+                $("#a5").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("5")!=-1){
+                $("#a6").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("6")!=-1){
+                $("#a7").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("7")!=-1){
+                $("#a8").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("8")!=-1){
+                $("#a9").css('color','#ff6347');
+            }
+            if((wrong.toString()).search("9")!=-1){
+                $("#a10").css('color','#ff6347');
+            }
+            
+        });
+        
+    });
+
+    </script>
+</body>
+</html>
+
+
+

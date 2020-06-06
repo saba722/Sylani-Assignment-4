@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Site Metas -->
+   <title>DASC-EDU</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+   <!-- Modernizer for Portfolio -->
+   <script src="js/modernizer.js"></script>
+   <style>
+      select{
+      width: 100%;
+      padding: 10px;
+      }
+      option{
+      padding: 10px;
+      }
+      input[type=text]{
+      color: black; 
+      width: 80%; 
+      padding: 6px;
+      cursor: pointer;
+      }
+      input[type=submit]: hover{
+      background-color: orange;
+      }
+      .search-container button {
+      padding:  6px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      }
+      .search-container button:hover {
+      background: #ccc;
+      }
+   </style>
+   </head>
+   <body class="host_version">
+      <!-- Modal -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header tit-up">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Customer Login</h4>
+               </div>
+               <div class="modal-body customer-box">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                     <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                     <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="Login">
+                        <form role="form" class="form-horizontal">
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="email1" placeholder="Name" type="text">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-sm-10">
+                                 <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                 Submit
+                                 </button>
+                                 <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="tab-pane" id="Registration">
+                        <form role="form" class="form-horizontal">
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" placeholder="Name" type="text">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="email" placeholder="Email" type="email">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input class="form-control" id="password" placeholder="Password" type="password">
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-sm-10">
+                                 <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                 Save &amp; Continue
+                                 </button>
+                                 <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                 Cancel</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- LOADER -->
+      <div id="preloader">
+         <div class="loader-container">
+            <div class="progress-br float shadow">
+               <div class="progress__item"></div>
+            </div>
+         </div>
+      </div>
+      <!-- END LOADER -->	
+      <!-- Start header -->
+      <header class="top-navbar">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">
+               <img src="images/logo.png" alt=""  width="150px" />
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbars-host">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="course-grid-4.html" >Courses </a></li>
+                     <li class="nav-item"><a class="nav-link" href="http://www.dasceurope.com/">For Business</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Sign in</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- End header -->
+      <div id="overviews" class="section wb">
+         <div class="container">
+            <div class="section-title row text-center">
+               <div class="col-md-12 col-sm-12 ">
+                  <div  class="big-tagline">
+                     <h2 style="font-size: 50px;">Love to learn. Online<span class="m_1" style="font-size: 30px;">– Enroll now!</span></h2>
+                  </div>
+               </div>
+            </div>
+            <!-- end title -->
+            <hr class="invis" >
+            <div class="row" >
+               <div class="col-lg-3 col-md-6 col-12"  >
+                  <div class="course-item" >
+                     <div  >
+                        <select >
+                           <option value="0">All Topics</option>
+                           <option value="1">Audi</option>
+                           <option value="2">BMW</option>
+                           <option value="3">Citroen</option>
+                           <option value="4">Ford</option>
+                           <option value="5">Honda</option>
+                           <option value="6">Jaguar</option>
+                           <option value="7">Land Rover</option>
+                           <option value="8">Mercedes</option>
+                           <option value="9">Mini</option>
+                           <option value="10">Nissan</option>
+                           <option value="11">Toyota</option>
+                           <option value="12">Volvo</option>
+                        </select>
+                        <br><br>	
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div >
+                        <select>
+                           <option value="0">All course types</option>
+                           <option value="1">Audi</option>
+                           <option value="2">BMW</option>
+                           <option value="3">Citroen</option>
+                           <option value="4">Ford</option>
+                           <option value="5">Honda</option>
+                           <option value="6">Jaguar</option>
+                           <option value="7">Land Rover</option>
+                           <option value="8">Mercedes</option>
+                           <option value="9">Mini</option>
+                           <option value="10">Nissan</option>
+                           <option value="11">Toyota</option>
+                           <option value="12">Volvo</option>
+                        </select>
+                        <br><br>	
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div >
+                        <select>
+                           <option value="0">All Languages</option>
+                           <option value="1">Audi</option>
+                           <option value="2">BMW</option>
+                           <option value="3">Citroen</option>
+                           <option value="4">Ford</option>
+                           <option value="5">Honda</option>
+                           <option value="6">Jaguar</option>
+                           <option value="7">Land Rover</option>
+                           <option value="8">Mercedes</option>
+                           <option value="9">Mini</option>
+                           <option value="10">Nissan</option>
+                           <option value="11">Toyota</option>
+                           <option value="12">Volvo</option>
+                        </select>
+                        <br><br>	
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div >
+                        <div class="search-container">
+                           <form action="#">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                           </form>
+                        </div>
+                        <br><br>	
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_1.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Engineering</a></h2>
+                        </div>
+                        <div class="course-desc">
+                           <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_2.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Hotel Management</a></h2>
+                        </div>
+                        <div class="blog-desc">
+                           <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->	
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_3.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Biotechnology</a></h2>
+                        </div>
+                        <div class="course-desc">
+                           <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_4.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Medical Sciences</a></h2>
+                        </div>
+                        <div class="course-desc">
+                           <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->			
+            <hr class="hr3">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_4.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Medical Sciences</a></h2>
+                        </div>
+                        <div class="course-desc">
+                           <p>This course helps you in learning office productivity tools that are part and parcel of modern work environment. It will provide hands on training in Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Internet and Email applications. </p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_2.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Hotel Management</a></h2>
+                        </div>
+                        <div class="blog-desc">
+                           <p>This course helps you in learning office productivity tools that are part and parcel of modern work environment. It will provide hands on training in Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Internet and Email applications.</p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_5.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Finance</a></h2>
+                        </div>
+                        <div class="course-desc">
+                           <p>This course helps you in learning office productivity tools that are part and parcel of modern work environment. It will provide hands on training in Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Internet and Email applications.</p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="course-item">
+                     <div class="image-blog">
+                        <img src="images/blog_6.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="course-br">
+                        <div class="course-title">
+                           <h2><a href="course-detail.html" title="">Fashion Designing</a></h2>
+                        </div>
+                        <div class="course-desc">
+                           <p>This course helps you in learning office productivity tools that are part and parcel of modern work environment. It will provide hands on training in Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Internet and Email applications. </p>
+                        </div>
+                        <div class="course-rating">
+                           4.5
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star"></i>	
+                           <i class="fa fa-star-half"></i>								
+                        </div>
+                     </div>
+                     <div class="course-meta-bot">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+                           <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+                           <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end section -->
+      <footer class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>About US</h3>
+                     </div>
+                     <p> Online learning offers a new way to explore subjects you’re passionate about. Pursue your interests by exploring our subject categories. 87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career</p>
+                     <div class="footer-right">
+                        <ul class="footer-links-soi">
+                           <li><a href="https://www.facebook.com/DASAviationService/"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://chat.whatsapp.com/invite/7R2xs4j7KieDWm3yampbVH"><i class="fa fa-whatsapp"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                        <!-- end links -->
+                     </div>
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Information Link</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="widget clearfix">
+                     <div class="widget-title">
+                        <h3>Contact Details</h3>
+                     </div>
+                     <ul class="footer-links">
+                        <li><a href="mailto:#">info@dasceurope.com</a></li>
+                        <li><a href="#">www.yoursite.com</a></li>
+                        <li>71-75 Shelton Street Covent Garden, London, UNITED KINGDOM, WC2H 9JQ</li>
+                        <li>P: +4402038661189 UK</li>
+                     </ul>
+                     <!-- end links -->
+                  </div>
+                  <!-- end clearfix -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </footer>
+      <!-- end footer -->
+      <div class="copyrights">
+         <div class="container">
+            <div class="footer-distributed">
+               <div class="footer-center">
+                  <p class="footer-company-name">All Rights Reserved. &copy; 2002 <a href="#">DASC-EDU</a></p>
+               </div>
+            </div>
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end copyrights -->
+      <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+      <!-- ALL JS FILES -->
+      <script src="js/all.js"></script>
+      <!-- ALL PLUGINS -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
